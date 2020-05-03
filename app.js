@@ -28,6 +28,8 @@ app.use(require("express-session")({
     saveUninitialized: false
 }));
 
+
+
 // mongoose.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connect( "mongodb+srv://sharath:Rajampeta@21@cluster0-8x6vp.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
      .then(() => console.log( 'Database Connected' ))
